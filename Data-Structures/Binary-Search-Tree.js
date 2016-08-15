@@ -64,8 +64,8 @@ function BinarySearchTree(){
 
 		while(node){
            
-           if(node.left){
-           		node=node.left;
+      if(node.left){
+       	node=node.left;
 				low = node.value;
 			}
 			else{

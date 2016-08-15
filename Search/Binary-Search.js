@@ -10,23 +10,22 @@ function findTarget(arr, target){
 
 while(lo < hi){
 
-		index = lo + (hi - lo)/2;
+	index = lo + (hi - lo)/2;
 
-		if(index % 1 > 0){
-			index = Math.floor(index);
-		}
+	if(index % 1 > 0){
+		index = Math.floor(index);
+	}
 
-		if(target < arr[index]){
-			hi -= 1;
-
-		}
-		else if(target > arr[index]){
-			lo += 1;
-		}
-		else{
-			console.log(arr[index]);
-			break;
-		}
+	if(target < arr[index]){
+		hi -= 1;
+	}
+	else if(target > arr[index]){
+		lo += 1;
+	}
+	else{
+		console.log(arr[index]);
+		break;
+	}
 	}
 }
 

@@ -16,8 +16,8 @@ function BinarySearchTree(){
 		 var root = this.root;
 
    		if(!root){
-      		this.root = new Node(value);
-      		return;
+      			this.root = new Node(value);
+      			return;
    		}
 
    		var currentNode = root;
@@ -29,8 +29,8 @@ function BinarySearchTree(){
       		if(value < currentNode.value){
 
           		if(!currentNode.left){
-             		currentNode.left = newNode;
-            	 break;
+             			currentNode.left = newNode;
+            	 		break;
          		 }
           		else{
              		currentNode = currentNode.left;
@@ -39,10 +39,9 @@ function BinarySearchTree(){
 
     		 /******MOVES LESSER VALUES RIGHt*******/
      		else{
-
         	 	if(!currentNode.right){
-            		currentNode.right = newNode;
-           		 break;
+            			currentNode.right = newNode;
+           		 	break;
          		}
 
          		else{
@@ -63,9 +62,14 @@ function BinarySearchTree(){
 		}
 
 		while(node){
+<<<<<<< HEAD
            
       if(node.left){
        	node=node.left;
+=======
+           		if(node.left){
+           			node=node.left;
+>>>>>>> origin/master
 				low = node.value;
 			}
 			else{
@@ -85,7 +89,6 @@ function BinarySearchTree(){
 		}
 
 		while(node){
-
 			if(node.right){
 				node = node.right;
 				hi = node.value;
@@ -104,22 +107,21 @@ function BinarySearchTree(){
          
 
 		while(node){
-   				
-   				if(value < node.value){
-   					node = node.left;
-   					location = node;
-   				}
-   				else if(value > node.value){
-   					node = node.right;
-   					location = node;
-   				}
-   				else if(value == node.value){
-   					location = node;
-   					break;
-   				}
-   				else{
-   					break;
-   				}
+   			if(value < node.value){
+   				node = node.left;
+   				location = node;
+   			}
+   			else if(value > node.value){
+   				node = node.right;
+   				location = node;
+ 			}
+   			else if(value == node.value){
+   				location = node;
+   				break;
+   			}
+  			else{
+   				break;
+   			}
    		}
 
    		if(location == null){

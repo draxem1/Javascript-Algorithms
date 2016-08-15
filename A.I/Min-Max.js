@@ -7,7 +7,6 @@ function setRandom(){
 	var random;
 
 	for(i=0; i<50; i++){
-
 		random = Math.floor(Math.random() * (999 - 100)) + 100;
 		array[i] = random;
 	}

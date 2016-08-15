@@ -6,13 +6,12 @@
 *
 ******************************************/
 function linearSearch(arr, target){
-		var i;
+	var i;
 
-		for(i=0; i<arr.length; i++){
-
-			if(arr[i] == target){
-				console.log("FOUND!!!\N" + "Location Of Target: " + (i + 1));
-			}
+	for(i=0; i<arr.length; i++){
+		if(arr[i] == target){
+			console.log("FOUND!!!\N" + "Location Of Target: " + (i + 1));
 		}
+	}
 }
 linearSearch([67, 45, 22, 13, 4, 52, 87], 13);

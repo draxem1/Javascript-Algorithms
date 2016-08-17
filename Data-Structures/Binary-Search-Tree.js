@@ -62,15 +62,14 @@ function BinarySearchTree(){
 		}
 
 		while(node){
-<<<<<<< HEAD
            
       if(node.left){
        	node=node.left;
-=======
-           		if(node.left){
-           			node=node.left;
->>>>>>> origin/master
-				low = node.value;
+       }
+
+      if(node.left){
+          node=node.left;
+				  low = node.value;
 			}
 			else{
 				break;
@@ -142,4 +141,4 @@ tree.add(2);
 tree.add(3);
 tree.add(6);
 
-console.log(tree);
+console.log(tree.max());

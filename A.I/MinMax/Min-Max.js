@@ -32,4 +32,5 @@ function minMax(){
 
 	console.log("MIN: " + min + ", Max: " + max);
 }
+
 minMax();
